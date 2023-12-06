@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labateca</title>
+    <link rel="stylesheet" href="/estilos/stile.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="body-index">
+
+    <header>
+        <h1>Bienvenido a Labateca!!!</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="idex.html" class="active">Inicio</a>
+        <a href="turismo.html">Turismo</a>
+        <a href="historia.html">Historia</a>
+        <button class="btn-toggle" onclick="toggleSidebar()">Mostrar Menú</button>
+    </nav>
+
+    <main class="container" id="main-content">
+        <h2 class="text-index">Explora nuestro hermoso pueblo</h2>
+        <p class="text-index">¡Encuentra la información que necesitas!</p>
+        
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/f1.jpeg" class="d-block w-100 imagenes-carrucel" alt="Imagen 1" id="imag-carrucel">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/WhatsApp Image 2023-10-28 at 12.40.56.jpeg" class="d-block w-100 imagenes-carrucel" alt="Imagen 2" id="imag-carrucel">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/santuario.jpeg" class="d-block w-100 imagenes-carrucel" alt="Imagen 3" id="imag-carrucel">
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </main>
+
+    <div class="sidebar" id="sidebar">
+        <header>
+            <h1>Menú</h1>
+        </header>
+        <nav>
+            <ul>
+                
+                
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="btn-toggle" onclick="toggleSidebar()">Salir</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <h2>Gracias por visitarnos</h2>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+
+            const mainContent = document.getElementById('main-content');
+            mainContent.classList.toggle('shifted');
+        }
+    </script>
+
+</body>
+</html>

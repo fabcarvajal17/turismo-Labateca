@@ -1,0 +1,58 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Color de fondo */
+    color: #333; /* Color del texto principal */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Margen para centrar el contenido */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Contacto</title>
+    <link rel="stylesheet" href="/estilos/stileContacto.css" type="text/css">
+</head>
+<body class="body-contacto">
+    <header>
+        <h1>Información de Contacto</h1>
+        <nav class="navbar">
+            <a href="idex.html">Inicio</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="historia.html">Historia</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Contáctanos</h2>
+        <p>¡Estamos encantados de ayudarte! Encuentra a continuación nuestros detalles de contacto:</p>
+
+        <div class="contact-info">
+            <h3>Información General</h3>
+            <p><strong>Dirección:</strong> CRA 91-30-43</p>
+            <p><strong>Teléfono:</strong> +57 32153542</p>
+            <p><strong>Correo Electrónico:</strong> fabian@gmail.com</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Redes Sociales</h3>
+            <p>¡Síguenos en nuestras redes sociales para mantenerte informado!</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <!-- Puedes agregar más redes sociales -->
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h3>Formulario de Contacto</h3>
+            <form action="/enviar.php" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button id="enviarFormulario">Enviar</button>
+                <p></p>
+                <p></p>
+                <br>
+                <br>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Función para mostrar el mensaje de agradecimiento al enviar el formulario
+function enviarFormulario(event) {
+    event.preventDefault(); // Prevenir el envío por defecto del formulario
+
+    // Obtener los valores del formulario
+    const nombre = document.querySelector('input[name="nombre"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const mensaje = document.querySelector('textarea[name="mensaje"]').value;
+
+    // Mostrar un mensaje emergente con los datos del usuario
+    alert(`Gracias por tu mensaje, ${nombre}.\nHemos recibido tu consulta y nos comunicaremos contigo pronto.`);
+}
+
+// Agregar un event listener al botón de enviar
+const botonEnviar = document.getElementById('enviarFormulario');
+botonEnviar.addEventListener('click', enviarFormulario);
+    </script>
+    
+
+    <footer>
+        <p>Derechos Reservados &copy; 2023 - Nombre de tu Empresa</p>
+    </footer>
+</body>
+</html>

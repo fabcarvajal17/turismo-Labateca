@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    background-image: url('/images/fondo1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-index {
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+header, .navbar {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Contenido principal */
+.main {
+    padding: 20px;
+}
+
+/* Cuadrícula de imágenes */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #005691;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+/* CSS para el carrusel de imágenes */
+.carousel-inner img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+}
+#imagenes-carrucel{
+    width: 100px;
+    height: 700px;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.sidebar header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar header h1 {
+    margin: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos del Contenido Principal */
+.content {
+    margin-left: 0; /* Inicialmente oculto */
+    padding: 20px;
+}
+
+/* Clase para ocultar el menú */
+.sidebar.hidden {
+    transform: translateX(-250px);
+}
+/* Estilos para el contenido desplazado */
+.shifted {
+    margin-left: 250px; /* Espacio para el menú */
+}
+
+/* Estilos para el botón "Mostrar Menú" */
+.btn-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.btn-toggle:hover {
+    background-color: #0056b3;
+}
+
+#imag-carrucel{
+    width: 200px;
+    height: 500px;
+}
